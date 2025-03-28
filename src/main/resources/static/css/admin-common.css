@@ -1,0 +1,123 @@
+/* ----------- 관리자 메인 ----------------*/
+.dashboard-card {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+}
+.dashboard-card:hover {
+    transform: none; /* 카드 확대 효과 제거 */
+}
+
+.icon-large {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.card-text {
+    flex-grow: 1;
+}
+
+.dashboard-content {
+    margin-left: 300px;
+    padding: 6rem 5rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+
+    width: calc(100% - 300px); /* 사이드바 제외한 영역 차지 */
+    box-sizing: border-box; /* 패딩 포함해서 크기 계산 */
+}
+
+.row {
+    margin: 0;
+}
+
+.col {
+    margin: 0 !important;
+    padding: 1rem;
+}
+
+.row.g-4 {
+    --bs-gutter-x: 1rem !important;
+    --bs-gutter-y: 1rem !important;
+}
+
+/* 버튼 스타일 ----------------*/
+.dashboard-card .btn {
+    background-color: #4169e1; /* 로얄 블루 */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem; /* 패딩 증가 */
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-card .btn:hover {
+    background-color: #365ac0; /* 진한 로얄 블루 */
+}
+
+
+/* -------------- 사이드바 ------------*/
+.dashboard-sidebar {
+    width: 300px;
+    background-color: #343a40; /* 배경색 고정 */
+    height: 100vh;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.dashboard-sidebar a {
+    display: flex;
+    align-items: center;
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    width: 100%;
+    background-color: transparent; /* 배경색 없음 */
+}
+
+.dashboard-sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 배경 유지, hover 시 진한 오버레이 */
+    color: #f8f9fa;
+}
+
+.dashboard-sidebar a .material-icons-outlined {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #f8f9fa;
+}
+
+.dashboard-sidebar a span {
+    font-size: 1rem;
+}
+
+.dashboard-sidebar .btn-logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.75rem 1rem;
+    background-color: transparent; /* 배경색 제거 */
+    color: #adb5bd; /* 은은한 회색 */
+    font-weight: 500; /* 보통 굵기 */
+    border: 1px solid #6c757d;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.dashboard-sidebar .btn-logout:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* 은은한 hover 효과 */
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+
